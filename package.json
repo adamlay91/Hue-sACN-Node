@@ -1,0 +1,23 @@
+{
+  "name": "hue-sacn-node",
+  "version": "1.0.0",
+  "description": "Control Phillips Hue bulbs via sACN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlay91/Hue-sACN-Node.git"
+  },
+  "author": "Adam Lay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamlay91/Hue-sACN-Node/issues"
+  },
+  "homepage": "https://github.com/adamlay91/Hue-sACN-Node#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "sacn": "^3.2.1"
+  }
+}
