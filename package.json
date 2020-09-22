@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/adamlay91/Hue-sACN-Node#readme",
   "dependencies": {
+    "color": "^3.1.2",
     "lodash": "^4.17.20",
+    "node-hue-api": "^4.0.9",
     "sacn": "^3.2.1"
   }
 }
