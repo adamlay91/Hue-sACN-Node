@@ -12,12 +12,9 @@ const config = {
     bridgeUsername: 'WIb3s1wiZRx2yw-Axgt7gWp48n5uy7sBJPXWboh2',
     /* Patch your hue bulbs to DMX addresses */
     lights: [
-                {hueId: 15, dmxAddress: 1},
-                {hueId: 16, dmxAddress: 1},
-                {hueId: 17, dmxAddress: 1},
-                {hueId: 18, dmxAddress: 1},
-                {hueId: 10, dmxAddress: 1},
-                {hueId: 7, dmxAddress: 1},
+                {hueId: 23, dmxAddress: 1},
+                {hueId: 24, dmxAddress: 7},
+                {hueId: 25, dmxAddress: 13},
             ],
     /* Throttle to one request per x milliseconds to
     not overwhelm the Hue bridge */
@@ -74,10 +71,10 @@ const connectToBridge = async () => {
                 // Set the values from DMX channels
                 updatedLightState
                 .on()
-                // .effect('none')
+                .effect('none')
                 .brightness(currentState[light.dmxAddress])
                 // .sat(254)
-                // .rgb(rgb)
+                .rgb(rgb)
                 .transition(transitionTimeFromValue)
 
                 // Make the call
